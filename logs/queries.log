@@ -1,0 +1,112 @@
+2022-10-22 19:11:55 Debug: duration=182 rows=1 SHOW TABLES FROM `curso`
+2022-10-22 19:12:22 Debug: duration=249 rows=1 SHOW TABLES FROM `curso`
+2022-10-22 19:12:22 Debug: duration=440 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2022-10-22 19:12:23 Debug: duration=288 rows=1 SHOW INDEXES FROM `clientes`
+2022-10-22 19:12:23 Debug: duration=849 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'curso' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2022-10-22 19:12:24 Debug: duration=80 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2022-10-22 19:12:31 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2022-10-22 19:12:31 Debug: duration=3 rows=1 SHOW INDEXES FROM `clientes`
+2022-10-22 19:12:31 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'curso' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2022-10-22 19:12:31 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2022-10-22 19:12:40 Debug: duration=96 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2022-10-22 19:12:40 Debug: duration=35 rows=1 SHOW INDEXES FROM `clientes`
+2022-10-22 19:12:40 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'curso' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2022-10-22 19:12:40 Debug: duration=12 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2022-10-22 19:12:40 Debug: duration=28 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:12:40 Debug: duration=99 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:13:48 Debug: duration=0 rows=0 BEGIN
+2022-10-22 19:13:48 Debug: duration=12 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.username = 'bianca.nf' LIMIT 1
+2022-10-22 19:13:48 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'bianca.ohs@gmail.com' LIMIT 1
+2022-10-22 19:13:48 Debug: duration=261 rows=1 INSERT INTO clientes (username, password, email, phone, created, modified) VALUES ('bianca.nf', '123456', 'bianca.ohs@gmail.com', '34997787869', '2022-10-22 19:13:48', '2022-10-22 19:13:48')
+2022-10-22 19:13:48 Debug: duration=0 rows=0 COMMIT
+2022-10-22 19:13:49 Debug: duration=23 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:13:49 Debug: duration=150 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:15:08 Debug: duration=61 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2022-10-22 19:15:08 Debug: duration=16 rows=1 SHOW INDEXES FROM `clientes`
+2022-10-22 19:15:08 Debug: duration=15 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'curso' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2022-10-22 19:15:08 Debug: duration=15 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2022-10-22 19:15:13 Debug: duration=11 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:15:13 Debug: duration=7 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:24:59 Debug: duration=299 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2022-10-22 19:24:59 Debug: duration=104 rows=1 SHOW INDEXES FROM `clientes`
+2022-10-22 19:24:59 Debug: duration=68 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'curso' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2022-10-22 19:24:59 Debug: duration=35 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2022-10-22 19:25:45 Debug: duration=33 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:25:45 Debug: duration=60 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:26:22 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:26:22 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:29:06 Debug: duration=44 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2022-10-22 19:29:06 Debug: duration=2 rows=1 SHOW INDEXES FROM `clientes`
+2022-10-22 19:29:06 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'curso' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2022-10-22 19:29:06 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2022-10-22 19:29:06 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:29:06 Debug: duration=32 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:29:46 Debug: duration=0 rows=0 BEGIN
+2022-10-22 19:29:46 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.username = 'bia' LIMIT 1
+2022-10-22 19:29:46 Debug: duration=45 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'bia@gmail.com' LIMIT 1
+2022-10-22 19:29:47 Debug: duration=204 rows=1 INSERT INTO clientes (username, password, email, phone, created, modified) VALUES ('bia', '$2y$10$gPlDISi4HklEx/HsRj6UTOz98a5nhitrbfZ14OuiGyo/l8xFIIuJK', 'bia@gmail.com', '723932332', '2022-10-22 19:29:46', '2022-10-22 19:29:46')
+2022-10-22 19:29:47 Debug: duration=0 rows=0 COMMIT
+2022-10-22 19:29:47 Debug: duration=120 rows=2 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:29:47 Debug: duration=2 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:37:52 Debug: duration=18 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2022-10-22 19:37:52 Debug: duration=5 rows=1 SHOW INDEXES FROM `clientes`
+2022-10-22 19:37:52 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'curso' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2022-10-22 19:37:52 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2022-10-22 19:37:52 Debug: duration=23 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 2 LIMIT 1
+2022-10-22 19:38:04 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 2 LIMIT 1
+2022-10-22 19:38:04 Debug: duration=0 rows=0 BEGIN
+2022-10-22 19:38:04 Debug: duration=46 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.username = 'isa' AND NOT (Clientes.id = 2)) LIMIT 1
+2022-10-22 19:38:04 Debug: duration=113 rows=1 UPDATE clientes SET username = 'isa' , modified = '2022-10-22 19:38:04' WHERE id = 2
+2022-10-22 19:38:04 Debug: duration=0 rows=0 COMMIT
+2022-10-22 19:38:05 Debug: duration=1 rows=2 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:38:05 Debug: duration=5 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2022-10-22 19:38:07 Debug: duration=2 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 2 LIMIT 1
+2022-10-22 19:38:11 Debug: duration=55 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 2 LIMIT 1
+2022-10-22 19:38:11 Debug: duration=0 rows=0 BEGIN
+2022-10-22 19:38:11 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'isadora@gmail.com' AND NOT (Clientes.id = 2)) LIMIT 1
+2022-10-22 19:38:11 Debug: duration=43 rows=1 UPDATE clientes SET email = 'isadora@gmail.com' , modified = '2022-10-22 19:38:11' WHERE id = 2
+2022-10-22 19:38:11 Debug: duration=0 rows=0 COMMIT
+2022-10-22 19:38:11 Debug: duration=1 rows=2 SELECT Clientes.id AS `Clientes__id`, Clientes.username AS `Clientes__username`, Clientes.password AS `Clientes__password`, Clientes.email AS `Clientes__email`, Clientes.phone AS `Clientes__phone`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes LIMIT 20 OFFSET 0
+2022-10-22 19:38:11 Debug: duration=2 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
